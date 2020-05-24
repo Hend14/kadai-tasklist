@@ -14,6 +14,7 @@
                 </div>
             </aside>
         </div>
+        {!! link_to_route('tasks.create', '新規タスクの追加', [], ['class' => 'btn btn-primary']) !!}
         @if (count($tasks) > 0)
             @include('tasks.index', ['tasks' => $tasks])
         @endif
