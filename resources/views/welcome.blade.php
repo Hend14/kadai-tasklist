@@ -17,7 +17,6 @@
         @if (count($tasks) > 0)
             @include('tasks.index', ['tasks' => $tasks])
         @endif
-        {!! link_to_route('tasks.create', '新規タスクの追加', [], ['class' => 'btn btn-primary']) !!}
     @else
     <div class="center jumbotron">
         <div class="text-center">

@@ -29,7 +29,7 @@ class AddUserIdToTasksTable extends Migration
     public function down()
     {
         Schema::table('tasks', function (Blueprint $table) {
-            $table->dropdownColumn('user_id')->unsigned()->index();
+            $table->dropdownForeign('tasks_user_id_foreign');
         });
     }
 }

@@ -27,7 +27,8 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
     
-    public function tasks() {
+    public function tasks() 
+    {
         return $this->hasMany(Task::class);
     }
 }
